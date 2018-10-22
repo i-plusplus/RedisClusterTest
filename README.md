@@ -29,13 +29,20 @@ RedisCluster java client jedis doesn't provide pipeline support. I have written 
 
 Test Results : Running with 10 threads with 4 redis and 4 twemproxy as 1st setup and 4 redis servers in redis clusters as 2nd setup.
 
-Setup	Call Type	Time Taken(Sec)	Redis CPU * 4	Client CPU	Twemproxy CPU * 4	Total CPU on given time	Total CPU cycles
-Twemproxy
-GET	140	22	90	50	378	52920
-GET Pipeline	35	25	70	50	370	12950
-RedisCluster
-GET	67	44	190	0	366	24522
-GET Pipeline	29	44	180	0	356	10324
- 
-
-
+<table style="width:100%">
+      <tr>
+            <th>Setup</th><ht>Call Type</th><th>Time Taken(Sec)</th><th>Redis CPU * 4</th><th>Client CPU</th><th>Twemproxy CPU * 4</th><th>Total CPU on given time</th><th>Total CPU cycles</th>
+      </tr>
+      <tr>
+            <th>Twemproxy</th><ht>GET</th><th>140</th><th>22</th><th>90</th><th>50</th><th>378</th><th>52920</th>
+      </tr>
+      <tr>
+            <th>Twemproxy</th><ht>GET Pipeline</th><th>35</th><th>25</th><th>70</th><th>50</th><th>370</th><th>12950</th>
+      </tr>
+      <tr>
+            <th>RedisCluster</th><ht>GET</th><th>67</th><th>44</th><th>190</th><th>0</th><th>366</th><th>24522</th>
+      </tr>
+      <tr>
+            <th>RedisCluster</th><ht>GET Pipeline</th><th>29</th><th>44</th><th>180</th><th>0</th><th>356</th><th>10324</th>
+      </tr>
+</table>
