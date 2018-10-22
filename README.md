@@ -31,18 +31,18 @@ Test Results : Running with 10 threads with 4 redis and 4 twemproxy as 1st setup
 
 <table style="width:100%">
       <tr>
-            <th>Setup</th><ht>Call Type</th><th>Time Taken(Sec)</th><th>Redis CPU * 4</th><th>Client CPU</th><th>Twemproxy CPU * 4</th><th>Total CPU on given time</th><th>Total CPU cycles</th>
+            <th>Setup</th><th>Call Type</th><th>Time Taken(Sec)</th><th>Redis CPU * 4</th><th>Client CPU</th><th>Twemproxy CPU * 4</th><th>Total CPU on given time</th><th>Total CPU cycles</th>
       </tr>
       <tr>
-            <th>Twemproxy</th><ht>GET</th><th>140</th><th>22</th><th>90</th><th>50</th><th>378</th><th>52920</th>
+            <th>Twemproxy</th><th>GET</th><th>140</th><th>22</th><th>90</th><th>50</th><th>378</th><th>52920</th>
       </tr>
       <tr>
-            <th>Twemproxy</th><ht>GET Pipeline</th><th>35</th><th>25</th><th>70</th><th>50</th><th>370</th><th>12950</th>
+            <th>Twemproxy</th><th>GET Pipeline</th><th>35</th><th>25</th><th>70</th><th>50</th><th>370</th><th>12950</th>
       </tr>
       <tr>
-            <th>RedisCluster</th><ht>GET</th><th>67</th><th>44</th><th>190</th><th>0</th><th>366</th><th>24522</th>
+            <th>RedisCluster</th><th>GET</th><th>67</th><th>44</th><th>190</th><th>0</th><th>366</th><th>24522</th>
       </tr>
       <tr>
-            <th>RedisCluster</th><ht>GET Pipeline</th><th>29</th><th>44</th><th>180</th><th>0</th><th>356</th><th>10324</th>
+            <th>RedisCluster</th><th>GET Pipeline</th><th>29</th><th>44</th><th>180</th><th>0</th><th>356</th><th>10324</th>
       </tr>
 </table>
