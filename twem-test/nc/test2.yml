@@ -1,0 +1,18 @@
+test_2:
+  listen: 0.0.0.0:5001
+  hash: fnv1a_64
+  distribution: ketama
+  auto_eject_hosts: false
+  redis: true
+  server_retry_timeout: 2000
+  server_failure_limit: 3
+  server_connections: 1
+  servers:
+   - 127.0.0.1:6000:1 master-shard-1
+
+   - 127.0.0.1:6001:1 master-shard-2
+
+   - 127.0.0.1:6002:1 master-shard-3
+
+   - 127.0.0.1:6003:1 master-shard-4
+
